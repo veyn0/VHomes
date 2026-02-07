@@ -4,7 +4,7 @@
   <groupId>dev.veyno</groupId>
   <artifactId>VHomes</artifactId>
   <name>VHomes</name>
-  <version>1.21.8-1.0.1</version>
+  <version>2.0</version>
   <build>
     <defaultGoal>clean package</defaultGoal>
     <resources>

@@ -64,6 +64,8 @@ ui:
       - " "
       - "<!italic><gray> Click to teleport to <white>{X}<gray>/</gray>{Y}<gray>/</gray>{Z}"
       - " "
+      - "<!italic><gray> Right Click to <red>delete</red>"
+      - " "
 
   # ------------------------------------------
   # Delete Confirmation Menu
@@ -78,7 +80,7 @@ ui:
       name: "<!italic><dark_green>Confirm"
       lore:
         - " "
-        - "<!italic><gray>Click to confirm Deleting {NAME}"
+        - "<!italic><gray>Click to confirm <red>Deleting</red> {NAME}"
         - " "
     
     # Cancel button
@@ -86,7 +88,7 @@ ui:
       name: "<!italic><red>Cancel"
       lore:
         - " "
-        - "<!italic><red>Click to cancel deleting {NAME}"
+        - "<!italic><grey>Click to cancel <red>deleting</red> {NAME}"
         - " "
 
 
