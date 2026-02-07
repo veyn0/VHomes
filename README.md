@@ -18,6 +18,7 @@ It aims to significantly improve stability while also creating a better structur
 - [ ] Inventory Navigation labels and Items Configurable
 - [ ] Create Home Through Inventory
 - [ ] PAPI Integration
+- [ ] Admin features to view / delete homes of players
 
 
 ## Commands
@@ -26,3 +27,11 @@ It aims to significantly improve stability while also creating a better structur
 | ---- | ---- | --- | --- |
 | home | homes, delhome | vhomes.use | Opens the home overview GUI |
 | sethome |  | vhomes.set | creates a home at the location of the Player |
+
+
+## Permissions
+
+| Name | default | description |
+| vhomes.use | true | allowes the player to teleport, delete and rename his homes |
+| vhomes.set | true | allowes the player to create homes |
+| vhomes.max.x | 5 | sets the maximum allowed homes for a player up to 100 |
