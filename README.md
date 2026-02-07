@@ -8,8 +8,13 @@ It aims to significantly improve stability while also creating a better structur
 | 1.21.11      | ✅     |✅     |❌     |❌     | 
 
 
-## Features
+## Features (Completed / Planned)
 
-
-- [x] Folia Support  
-- [ ] Warp System  
+- [x] GUI
+- [X] Most of the Labels are configurable
+- [x] Folia Support
+- [ ] Warp System / public Homes
+- [ ] Edit Names
+- [ ] Inventory Navigation labels and Items Configurable
+- [ ] Create Home Through Inventory
+- [ ] PAPI Integration
