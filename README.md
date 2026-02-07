@@ -32,6 +32,7 @@ It aims to significantly improve stability while also creating a better structur
 ## Permissions
 
 | Name | default | description |
+| --- | --- | --- |
 | vhomes.use | true | allowes the player to teleport, delete and rename his homes |
 | vhomes.set | true | allowes the player to create homes |
 | vhomes.max.x | 5 | sets the maximum allowed homes for a player up to 100 |
