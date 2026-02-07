@@ -4,7 +4,7 @@ It aims to significantly improve stability while also creating a better structur
 
 | Version           | Tested Versions | Folia | Paper | Warps | Name Changeable|
 |--------------------|--------|--------|--------|--------|--------|
-| 1.21.10      | 1.21.4 - 1.21.11 |✅     |✅     |❌     |❌     | 
+| [1.21.11](https://github.com/veyn0/VHomes/releases/latest)      | 1.21.4 - 1.21.11 |✅     |✅     |❌     |❌     | 
 
 
 ## Features (Completed / Planned)
