@@ -18,6 +18,7 @@ It aims to significantly improve stability while also creating a better structur
 - [ ] Create Home Through Inventory
 - [ ] PAPI Integration
 - [ ] Admin features to view / delete homes of players
+- [ ] Fully configurable sounds
 
 
 ## Commands
