@@ -1,0 +1,22 @@
+name: VHomes
+version: '1.0'
+main: dev.veyno.vHomes.VHomes
+api-version: '1.21'
+authors: [ veyno ]
+website: https://veyno.dev
+folia-supported: true
+
+commands:
+  home:
+    aliases:
+      - homes
+      - delhome
+  sethome:
+
+permissions:
+  vhomes.use:
+      default: true
+  vhomes.set:
+      default: true
+  vhomes.max.5:
+      default: true

@@ -1,0 +1,58 @@
+
+# The maximum amount of homes a player can set can also be configured with the permission "vhomes.max.<amount>". amount can be 0-100
+
+
+
+#THe interval in seconds the local cached homes will be updated:
+update-interval: 300
+#In what interval should the plugin attempt to save changed homes? by default this is set to 5 seconds
+save-interval: 5
+
+
+#the database can be "local" to use a local .sqlite file located in plugins/VHomes/homes.sqlite or a jdbc conneciton url
+database-connection: "local"
+
+
+ui:
+  #Available placeholders: {PLAYER_NAME}
+  overview-title: "<blue>{PLAYER_NAME} <black>|</black> Homes"
+  home-item:
+    material: "BLUE_BED"
+    #available placeholders (lore and name) {X}, {Y}, {Z}, {NAME}
+    lore:
+      - " "
+      - "<!italic><gray>position: (<white>{X}<gray>/</gray>{Y}<gray>/</gray>{Z}</white>)"
+      - "<!italic><gray>Linksclick um dich zu <white>teleportieren"
+      - "<!italic><gray>Rechtslick zum <white>bearbeiten"
+      - " "
+    name: "<!italic><blue>{NAME}"
+  delete-confirm:
+    title: "<dark_red>Löschung bestätigen <black>|</black><blue> {NAME} "
+    confirm-item:
+      name: "<!italic><dark_green>Bestätigen"
+      lore:
+        - " "
+        - "<!italic><gray>Klicke um das Löschen deines Homes<white> {NAME} </white>zu bestätigen"
+        - " "
+    cancel-item:
+      name: "<!italic><dark_red>Abbrechen"
+      lore:
+        - " "
+        - "<!italic><gray>Klicke um das Löschen deines Homes<white> {NAME} </white>abzubrechen"
+        - " "
+
+messages:
+  no-homes: "<bold><gradient:#a53cfa:#C77DFF>Astravale</gradient></bold><dark_gray> | </dark_gray><bold><dark_green>Homesystem</dark_green></bold> <dark_gray>:</dark_gray><gray> Du hast noch <dark_red>keine Homes</dark_red> erstellt."
+  homes-limit-reached: "<bold><gradient:#a53cfa:#C77DFF>Astravale</gradient></bold><dark_gray> | </dark_gray><bold><dark_green>Homesystem</dark_green></bold> <dark_gray>:</dark_gray><gray> Du kannst nur maximal <dark_red>{MAX} Homes erstellen</dark_red>."
+  no-name-specified: "<bold><gradient:#a53cfa:#C77DFF>Astravale</gradient></bold><dark_gray> | </dark_gray><bold><dark_green>Homesystem</dark_green></bold> <dark_gray>:</dark_gray><gray>Du musst einen <dark_red>Namen</dark_red> für dein Home angeben"
+  home-created: "<bold><gradient:#a53cfa:#C77DFF>Astravale</gradient></bold><dark_gray> | </dark_gray><bold><dark_green>Homesystem</dark_green></bold> <dark_gray>:</dark_gray><gray> Deine aktuelle Position wurde <dark_green><bold>Erfolgreich</bold></dark_green> als <white>{HOME}</white> gespeichert."
+  delete-confirm: "<bold><gradient:#a53cfa:#C77DFF>Astravale</gradient></bold><dark_gray> | </dark_gray><bold><dark_green>Homesystem</dark_green></bold> <dark_gray>:</dark_gray><gray> Dein Home <white>{HOME}</white> wurde erfolgreich <dark_red><bold>Gelöscht</bold><dark_red>."
+
+teleport:
+  #available placeholder: "{SECONDS}" for the remaining seconds until teleport
+  warmup-start: "<bold><gradient:#a53cfa:#C77DFF>Astravale</gradient></bold><dark_gray> | </dark_gray><bold><dark_green>Homesystem</dark_green></bold> <dark_gray>:</dark_gray><gray> Du wirst in<bold><white> {SECONDS} </white></bold>Sekunden teleportiert."
+  already-teleporting: "<bold><gradient:#a53cfa:#C77DFF>Astravale</gradient></bold><dark_gray> | </dark_gray><bold><dark_green>Homesystem</dark_green></bold> <dark_gray>:</dark_gray><gray> Du <dark_red>teleportierst dich bereits</dark_red>."
+  cancelled-moved: "<bold><gradient:#a53cfa:#C77DFF>Astravale</gradient></bold><dark_gray> | </dark_gray><bold><dark_green>Homesystem</dark_green></bold> <dark_gray>:</dark_gray><gray> Deine Teleportation wurde <dark_red>Abgebrochen</dark_red>, da du dich bewegt hast."
+  success: "<bold><gradient:#a53cfa:#C77DFF>Astravale</gradient></bold><dark_gray> | </dark_gray><bold><dark_green>Homesystem</dark_green></bold> <dark_gray>:</dark_gray><gray> Du wurdest<dark_green> Erfolgreich</dark_green> Teleportiert."
+  #available placeholder: "{SECONDS}" for the remaining seconds until teleport
+  countdown: "<bold><gradient:#a53cfa:#C77DFF>Astravale</gradient></bold><dark_gray> | </dark_gray><bold><dark_green>Homesystem</dark_green></bold> <dark_gray>:</dark_gray><gray> Du wirst in<bold><white> {SECONDS} </white></bold>Sekundenteleportiert."

@@ -1,0 +1,135 @@
+# ==========================================
+#           VHomes Configuration
+# ==========================================
+
+# ------------------------------------------
+# Home Limit Settings
+# ------------------------------------------
+# Maximum number of homes per player (default: 5)
+# Can also be overridden via permission "vhomes.max.<amount>" (0-100)
+default-homes: 5
+
+
+# ------------------------------------------
+# Update & Save Intervals
+# ------------------------------------------
+# Interval in seconds for updating the local home cache
+update-interval: 300
+
+# Interval in seconds for saving changed homes to database
+save-interval: 5
+
+
+# ------------------------------------------
+# Teleportation Settings
+# ------------------------------------------
+# Warmup time in seconds before teleporting
+teleport-warmup: 3
+
+
+# ------------------------------------------
+# Database Configuration
+# ------------------------------------------
+# Database connection:
+# - "local" = local SQLite file (plugins/VHomes/homes.sqlite)
+# - Alternative: JDBC connection URL for external databases
+database-connection: "local"
+
+
+# ==========================================
+#          User Interface (UI)
+# ==========================================
+ui:
+  # ------------------------------------------
+  # Overview Menu
+  # ------------------------------------------
+  # Title of the home overview menu
+  # Available placeholders: {PLAYER_NAME}
+  overview-title: "<black>{PLAYER_NAME} <reset>- <blue>Homes"
+
+  # ------------------------------------------
+  # Home Item Design
+  # ------------------------------------------
+  home-item:
+    # Material for the home item in the menu
+    material: "BLUE_BED"
+    
+    # Display name of the home item
+    # Available placeholders: {X}, {Y}, {Z}, {NAME}
+    name: "<!italic><blue>{NAME}"
+    
+    # Lore (description text) of the home item
+    # Available placeholders: {X}, {Y}, {Z}, {NAME}
+    lore:
+      - " "
+      - "<!italic><gray> Click to teleport to <white>{X}<gray>/</gray>{Y}<gray>/</gray>{Z}"
+      - " "
+
+  # ------------------------------------------
+  # Delete Confirmation Menu
+  # ------------------------------------------
+  delete-confirm:
+    # Title of the confirmation menu
+    # Available placeholders: {NAME}
+    title: "<red>Confirm Deleting Home {NAME}"
+    
+    # Confirm button
+    confirm-item:
+      name: "<!italic><dark_green>Confirm"
+      lore:
+        - " "
+        - "<!italic><gray>Click to confirm Deleting {NAME}"
+        - " "
+    
+    # Cancel button
+    cancel-item:
+      name: "<!italic><red>Cancel"
+      lore:
+        - " "
+        - "<!italic><red>Click to cancel deleting {NAME}"
+        - " "
+
+
+# ==========================================
+#              Messages
+# ==========================================
+messages:
+  # Message when player has no homes
+  no-homes: "<red>You do not have any homes"
+  
+  # Message when home limit is reached
+  # Available placeholders: {MAX}
+  homes-limit-reached: "<red>You have reached the maximum limit of homes. You can only create up to {MAX} homes"
+  
+  # Message when no home name was specified
+  no-name-specified: "<red>You need to specify a name for your home"
+  
+  # Message on successful home creation
+  # Available placeholders: {HOME}
+  home-created: "<green>Successfully created Home {HOME} at your current position"
+  
+  # Message on successful home deletion
+  # Available placeholders: {HOME}
+  delete-confirm: "<green>Successfully deleted home {HOME}"
+
+
+# ------------------------------------------
+# Teleportation Messages
+# ------------------------------------------
+teleport:
+  # Message at the start of teleport warmup
+  # Available placeholders: {SECONDS}
+  warmup-start: "<yellow>You will be teleported in {SECONDS} seconds."
+  
+  # Message when already teleporting
+  already-teleporting: "<red>You are already teleporting"
+  
+  # Message when teleport is cancelled due to movement
+  cancelled-moved: "<red>Your teleportation was canceled due to movement"
+  
+  # Message on successful teleport
+  success: "<green>You have been teleported"
+  
+  # Countdown message during warmup
+  # Available placeholders: {SECONDS}
+  countdown: "<yellow>Teleporting in {SECONDS}..."
