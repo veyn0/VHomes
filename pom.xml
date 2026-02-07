@@ -6,7 +6,7 @@
 
     <groupId>dev.veyno</groupId>
     <artifactId>VHomes</artifactId>
-    <version>1.21.8-1.0.1</version>
+    <version>2.0</version>
     <packaging>jar</packaging>
 
     <name>VHomes</name>

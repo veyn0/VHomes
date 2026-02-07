@@ -131,10 +131,10 @@ public class HomeManager {
                 .setUsableRows(3)
                 .setShowNavigation(false)
                 .addItem(confirm, action ->{
+                    action.getPlayer().sendMessage(MiniMessage.miniMessage().deserialize(plugin.getConfig().getString("messages.delete-confirm", "remove success").replace("{HOME}", h.displayName())));
+                    inv.close();
                     Bukkit.getAsyncScheduler().runNow(plugin, task ->{
                         plugin.getHomeRepository().removeHome(h.homeId());
-                        action.getPlayer().sendMessage(MiniMessage.miniMessage().deserialize(plugin.getConfig().getString("messages.delete-confirm", "remove success").replace("{HOME}", h.displayName())));
-                        inv.close();
                     });
                 })
                 .addItem(createHomeItemStack(h), action ->{
