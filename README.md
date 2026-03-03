@@ -16,7 +16,7 @@ It aims to significantly improve stability while also creating a better structur
 - [ ] Edit Names
 - [ ] Inventory Navigation labels and Items Configurable
 - [ ] Create Home Through Inventory
-- [ ] PAPI Integration
+- [ ] PAPI Placeholders
 - [ ] Admin features to view / delete homes of players
 - [ ] Fully configurable sounds
 
